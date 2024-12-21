@@ -1,0 +1,11 @@
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\config\WebConfig.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\controller\LoginController.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\dto\LoginRequest.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\dto\RegisterRequest.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\entity\QuizQuestion.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\entity\User.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\QuizApplication.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\repo\QuestionRepo.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\repo\UserRepository.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\service\QuestionService.java
+D:\Quiz-App-Spark2.0-main\quiz\src\main\java\com\genie\quiz\service\UserService.java
