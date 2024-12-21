@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll">
+
+     <!--Landing Page-->
+    <section class="landing-page">
+
+        <div class="wrapper">
+            <div class="flex-content">
+                <h1 class="vacation-heading">Welcome To Master Quiz</h1>
+                <a id ="start-now-btn" class="btn">Start Now</a>
+               
+            </div>
+        </div>
+
+    </section>
+      <!-- Modal for Login and Registration Form -->
+      <div class="modal" id="auth-modal">
+        <div class="modal-content">
+            <h2 id="modal-title">Login</h2>
+
+            <!-- Login Form -->
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+
+            <!-- Registration Form -->
+            <form id="register-form" style="display: none;">
+                <div class="form-group">
+                    <label for="register-username">Username</label>
+                    <input type="text" id="register-username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+
+            <!-- Switch between Login and Register -->
+            <p id="switch-text">
+                Don't have an account? <span id="switch-link">Register</span>
+            </p>
+            <p id="switch-to-login-text" style="display: none;">
+                Already have an account? <span id="switch-to-login-link">Login</span>
+            </p>
+        </div>
+    </div>
+
+   
+    <!--header section-->
+    <header class="quiz-header" id="quiz-header">
+        <h1 class="heading">Master Quiz</h1>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#quiz-packages">Quiz</a>
+        <a href="#Performer">Top Performers</a>
+        <a href="#notes">Notes</a>
+    </nav>
+
+    <section class="quiz-packages-section" id="quiz-packages">
+        <h1 class="quiz-heading">Coding Quiz</h1>
+        <p class="quiz-text">Welcome to our Coding Quiz platform, where you can challenge your programming skills and test your knowledge across various coding languages and concepts. Whether you're a beginner looking to get started or an experienced developer aiming to sharpen your skills, we offer a wide range of quizzes designed to help you grow and excel. From basic syntax to advanced algorithms, each quiz is tailored to assess your proficiency and enhance your problem-solving abilities. Track your progress, compete with fellow coders, and become a top performer on our leaderboard. Start quizzing today and level up your coding journey!</p>
+        <div class="package-wrapper">
+            <div class="package-card">
+                <img src=".//images/java.jpg" alt="">
+                <p class="card-heading">Java</p>
+                <p class="card-text">Test your Java knowledge with quizzes covering syntax, OOP concepts, algorithms, and more. Improve skills and track progress.</p>
+                <p class="card-heading">500₹</p>
+                <button class="btn" onclick="startQuiz('java')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src=".//images/python.jpg" alt="">
+                <p class="card-heading">Python</p>
+                <p class="card-text">Test your Python knowledge with quizzes on syntax, data structures, algorithms, and more. Improve skills and track progress.</p>
+                <p class="card-heading">400₹</p>
+                <button class="btn" onclick="startQuiz('python')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src=".//images/js.png" alt="">
+                <p class="card-heading">JavaScript</p>
+                <p class="card-text">Challenge your JavaScript skills with quizzes on syntax, DOM manipulation, events, and more. Track progress and enhance understanding.</p>
+                <p class="card-heading">300₹</p>
+                <button class="btn"onclick="startQuiz('javascript')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src=".//images/net.png" alt="">
+                <p class="card-heading">.Net</p>
+                <p class="card-text">Test your .NET knowledge with quizzes on C#, ASP.NET, MVC, and more. Improve skills and track your development progress. </p>
+                <p class="card-heading">200₹</p>
+                <button class="btn"onclick="startQuiz('net7')">Take Quiz</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="Performer-quiz-section" id="Performer">
+        <h1 class="quiz-heading">Top Performer</h1>
+        <p class="quiz-text">Our top performers are the brightest minds who have consistently excelled in our quizzes, showcasing their expertise and dedication. They represent the pinnacle of knowledge across various subjects like Java, Python, and more. With impressive scores, they set the benchmark for others to follow and inspire the entire community to strive for excellence</p>
+        <div class="image-card">
+            <img src=".//images/m1.jpeg" alt="">
+            <img src=".//images/m2.jpg" alt="">
+            <img src=".//images/m3.jpg" alt="">
+            <img src=".//images/m4.jpg" alt="">
+            <img src=".//images/m5.jpg" alt="">
+            <img src=".//images/m6.jpg" alt="">
+        </div>
+        
+    </section>
+    
+
+    <section class="notes-section" id="notes">
+        <h1 class="quiz-heading">Subject notes</h1>
+        <p class="quiz-text">
+            Our Subject Notes section provides comprehensive study material for a wide range of topics across various subjects. Whether you're preparing for exams, seeking a deeper understanding of a particular concept, or reviewing key points, our notes are designed to help you succeed. We ensure that each note is clear, concise, and filled with essential information, making it easier for you to grasp complex concepts quickly. From theory to practical examples, our notes are created to support your learning journey and help you perform your best in your academic endeavors. Access the notes anytime, anywhere, and stay ahead in your studies!
+        </p>
+        <div class="notes-div">
+            <!-- Java Notes -->
+            <div class="notes-wrapper">
+                <img src="./images/java.jpg" alt="Java Notes">
+                <a href="./notes/Java.pdf" download="Java Notes" class="download-btn">Download Notes</a>
+            </div>
+    
+            <!-- Compiler Notes -->
+            <div class="notes-wrapper">
+                <img src="./images/compiler.png" alt="Compiler Notes">
+                <a href="./notes/compiler design.pdf" download="Compiler Notes" class="download-btn">Download Notes</a>
+            </div>
+    
+            <!-- Spring Notes -->
+            <div class="notes-wrapper">
+                <img src="./images/spring.png" alt="Spring Notes">
+                <a href="./notes/spring_notes.pdf" download="Spring Notes" class="download-btn">Download Notes</a>
+            </div>
+    
+            <!-- React Notes -->
+            <div class="notes-wrapper">
+                <img src="./images/react.png" alt="React Notes">
+                <a href="./notes/react_notes.pdf" download="React Notes" class="download-btn">Download Notes</a>
+            </div>
+    
+            <!-- Development Notes -->
+            <div class="notes-wrapper">
+                <img src="./images/dev.jpg" alt="Development Notes">
+                <a href="./notes/dev_notes.pdf" download="Development Notes" class="download-btn">Download Notes</a>
+            </div>
+    
+            <!-- Python Notes -->
+            <div class="notes-wrapper">
+                <img src="./images/python.jpg" alt="Python Notes">
+                <a href="./notes/python_notes.pdf" download="Python Notes" class="download-btn">Download Notes</a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer class="footer-section">
+        <small>All Right Reserver</small>
+        <small>Developed  & Maintained By
+            <a href="https://www.linkedin.com/in/mayank-kashyap-a6a03630a/" target="_blank">Mayank Kashyap</a>
+        </small>
+    </footer>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
